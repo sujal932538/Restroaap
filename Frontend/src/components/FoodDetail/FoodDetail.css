@@ -1,0 +1,129 @@
+.food-detail {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: 0.3s ease-in-out;
+}
+
+.food-detail-container {
+    place-self: center;
+    width: min(90vw, 500px);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    animation: slideUp 0.4s ease-out;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+}
+
+.food-detail-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #49557e;
+}
+
+.food-detail-title h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.food-detail-title img {
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.food-detail-title img:hover {
+    transform: rotate(90deg);
+}
+
+.food-detail-image-container {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.food-detail-image {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.food-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.food-detail-name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-detail-name {
+    font-size: 22px;
+    font-weight: 500;
+    color: #262626;
+}
+
+.food-detail-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--restro);
+}
+
+.food-detail-desc {
+    color: #676767;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.food-detail-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.food-detail-actions button {
+    border: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    background-color: var(--restro);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+    box-shadow: 0 4px 15px rgba(255, 99, 71, 0.3);
+}
+
+.food-detail-actions button:hover {
+    background-color: #e5533c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 99, 71, 0.4);
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
