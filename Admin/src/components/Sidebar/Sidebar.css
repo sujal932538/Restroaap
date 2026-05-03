@@ -25,7 +25,7 @@ gap: 20px;
 }
 .sidebar-option.active{
     background-color: #fff0ed;
-    border-color: tomato;
+    border-color: var(--restro);
 }
 @media (max-width:900px) {
     .sidebar-option p{

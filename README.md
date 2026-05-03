@@ -16,7 +16,7 @@
   </p>
 
 
-![Picture](https://raw.githubusercontent.com/fr0st-iwnl/assets/main/thumbnails/tomato.png)
+![Picture](https://raw.githubusercontent.com/fr0st-iwnl/assets/main/thumbnails/restro.png)
 
 
 <p align="center">
